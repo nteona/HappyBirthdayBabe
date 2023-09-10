@@ -10,6 +10,7 @@
             height: 100%;
             margin: 0;
             padding: 0; /* Remove default padding */
+            overflow: hidden; /* Hide scrollbars */
         }
 
         /* Set the background image */
@@ -19,13 +20,15 @@
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed; /* Fixed background image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
-        /* Add some spacing for better readability on smaller screens */
+        /* Add some spacing for better readability */
         h1 {
-            padding: 20px;
             font-size: 2rem;
-            text-align: center;
             color: #fff; /* Text color for better visibility on the image */
         }
 
