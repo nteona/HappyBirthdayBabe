@@ -38,15 +38,19 @@
 
         /* Background image for smaller screens (phones) */
         @media (max-width: 768px) {
+            body {
+                background-color: #000; /* Set background color for phones */
+            }
+
             .phone-background {
                 background-image: url('HBF2.png'); /* Replace with your phone image URL */
-                background-size: cover;
-                background-position: center;
+                background-size: contain; /* Adjust the background size to maintain image aspect ratio */
+                background-position: top left; /* Position the image at the top-left corner */
                 background-repeat: no-repeat;
                 background-attachment: scroll; /* Make only the phone background scrollable */
                 width: 100%;
                 height: 100%;
-                position: fixed;
+
                 top: 0;
                 left: 0;
                 z-index: -1;
@@ -69,6 +73,7 @@
 <body>
     <div class="phone-background"></div>
     <div class="content">
+        <h1>Check out this picture!</h1>
     </div>
 </body>
 </html>
