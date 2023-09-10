@@ -9,7 +9,7 @@
         body, html {
             height: 100%;
             margin: 0;
-            overflow: hidden; /* Hide scrollbars */
+            padding: 0; /* Remove default padding */
         }
 
         /* Set the background image */
@@ -20,9 +20,24 @@
             background-repeat: no-repeat;
             background-attachment: fixed; /* Fixed background image */
         }
+
+        /* Add some spacing for better readability on smaller screens */
+        h1 {
+            padding: 20px;
+            font-size: 2rem;
+            text-align: center;
+            color: #fff; /* Text color for better visibility on the image */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Empty body content -->
+    <h1>Check out this picture!</h1>
 </body>
 </html>
